@@ -35,12 +35,14 @@ from .daily_cache import index_csv
 
 if getattr(sys, "frozen", False):
     ROOT = Path(getattr(sys, "_MEIPASS", Path(sys.executable).parent))
+    CACHE = Path(sys.executable).resolve().parent / "data" / "sources"
 else:
     package_root = Path(__file__).resolve().parents[2]
-    ROOT = (Path.cwd() if (Path.cwd() / "config" / "sources.json").is_file()
-            else package_root)
+    roots = (Path.cwd(), *Path.cwd().parents)
+    ROOT = next((root for root in roots if (root / "config" / "sources.json").is_file()),
+                package_root)
+    CACHE = ROOT / "data" / "sources"
 CONFIG = ROOT / "config" / "sources.json"
-CACHE = ROOT / "data" / "sources"
 
 
 def read_workers(settings):

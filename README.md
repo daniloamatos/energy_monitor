@@ -68,7 +68,8 @@ pyinstaller energy_monitor.spec
 O resultado fica em `dist/energy_monitor/` (`energy_monitor.exe` no Windows ou
 `energy_monitor` no Linux). O catálogo e os assets são incluídos no executável;
 os CSVs, índices e estado persistente continuam fora dele, em `data/sources/`,
-criado automaticamente. O build precisa ser feito separadamente em cada sistema
+criado automaticamente ao lado do executável (ou na raiz do projeto ao executar
+com Python). O build precisa ser feito separadamente em cada sistema
 operacional e arquitetura de destino.
 
 ## Linha de comando
@@ -83,6 +84,9 @@ python -m energy_monitor schedule install|status|check|remove
 ```
 
 Todos aceitam `--config` e `--cache` (use caminhos absolutos em tarefas externas).
+Ao executar a partir de uma subpasta do clone, o programa procura
+automaticamente `config/sources.json` nos diretórios pai e mantém o cache em
+`data/sources` na raiz encontrada.
 
 **Códigos de saída:** `0` sucesso, `1` falha, `2` dispensado por trava ou deduplicação, `130` cancelado ou interrompido.
 

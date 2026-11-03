@@ -35,6 +35,40 @@ def test_cache_padrao_e_criado_no_projeto_sem_pasta_data(tmp_path, monkeypatch):
         str(project / "data" / "sources")]
 
 
+def test_cache_padrao_encontra_clone_a_partir_de_subdiretorio(tmp_path):
+    project = tmp_path / "project"
+    (project / "config").mkdir(parents=True)
+    (project / "config" / "sources.json").write_text(
+        '{"timezone":"America/Sao_Paulo","update_times":["12:30"],"resources":[]}',
+        encoding="utf-8")
+    subdirectory = project / "scripts"
+    subdirectory.mkdir()
+    result = subprocess.run(
+        [sys.executable, "-c",
+         "from energy_monitor.data_sources import ROOT, CONFIG, CACHE; "
+         "print(ROOT); print(CONFIG); print(CACHE)"],
+        cwd=subdirectory, capture_output=True, text=True, check=True)
+    assert result.stdout.splitlines() == [
+        str(project), str(project / "config" / "sources.json"),
+        str(project / "data" / "sources")]
+
+
+def test_cache_do_executavel_fica_ao_lado_do_binario(tmp_path):
+    executable = tmp_path / "dist" / "energy_monitor"
+    executable.parent.mkdir()
+    extraction = tmp_path / "temporary-meipass"
+    result = subprocess.run(
+        [sys.executable, "-c",
+         "import sys; sys.frozen=True; sys.executable=sys.argv[1]; sys._MEIPASS=sys.argv[2]; "
+         "from energy_monitor.data_sources import ROOT, CONFIG, CACHE; "
+         "print(ROOT); print(CONFIG); print(CACHE)",
+         str(executable), str(extraction)],
+        capture_output=True, text=True, check=True)
+    assert result.stdout.splitlines() == [
+        str(extraction), str(extraction / "config" / "sources.json"),
+        str(executable.parent / "data" / "sources")]
+
+
 def test_agenda_so_dispara_no_horario_configurado_e_avanca_para_o_proximo():
     schedule = Schedule({'timezone': 'America/Sao_Paulo', 'update_times': ['12:30', '20:30']})
     assert schedule.due(datetime(2026, 11, 3, 12, 29, tzinfo=ZONE)) is False
