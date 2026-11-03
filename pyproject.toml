@@ -18,6 +18,12 @@ dependencies = [
     "screeninfo>=0.8.1,<1",
 ]
 
+[project.optional-dependencies]
+build = ["pyinstaller>=6.0,<7"]
+
+[project.scripts]
+energy-monitor = "energy_monitor.__main__:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

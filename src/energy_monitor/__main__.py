@@ -26,22 +26,22 @@ def main() -> None:
     args = parser.parse_args()
     if args.scheduled and not args.update_only:
         parser.error("--scheduled exige --update-only")
-    from .data_sources import SourceStore, CONFIG, CACHE
+    from energy_monitor.data_sources import SourceStore, CONFIG, CACHE
 
     store = SourceStore(args.config or CONFIG, args.cache or CACHE)
     if args.update_only or args.validate_only or args.command:
-        from .cancellation import OperationCancelled
-        from .scheduling import SystemdScheduler, validate
-        from .updater import UpdateExecutor
+        from energy_monitor.cancellation import OperationCancelled
+        from energy_monitor.scheduling import SystemdScheduler, validate
+        from energy_monitor.updater import UpdateExecutor
 
         try:
             if args.command == 'diagnostics':
-                from .diagnostics import Diagnostics
+                from energy_monitor.diagnostics import Diagnostics
                 print(json.dumps(Diagnostics(store.cache).status(), indent=2, ensure_ascii=False))
                 code = 0
             elif args.command == 'sources':
-                from .discovery import discover, read_state
-                from .updater import UpdateLock
+                from energy_monitor.discovery import discover, read_state
+                from energy_monitor.updater import UpdateLock
                 if args.action == 'status':
                     state = read_state(store.cache)
                 else:
@@ -52,7 +52,7 @@ def main() -> None:
                         state = discover(store, dry_run=args.dry_run, force=True)
                     finally:
                         lock.release()
-                from .diagnostics import sanitize_data
+                from energy_monitor.diagnostics import sanitize_data
                 print(json.dumps(sanitize_data(state), indent=2, ensure_ascii=False))
                 code = 1 if any(value.get('result') == 'failed' for value in state.get('providers', {}).values()) else 0
             elif args.command:
@@ -79,11 +79,11 @@ def main() -> None:
             print("Atualização interrompida ou cancelada.")
             code = 130
         except (OSError, ValueError, RuntimeError, KeyError, sqlite3.Error, subprocess.SubprocessError) as error:
-            from .diagnostics import safe_error
+            from energy_monitor.diagnostics import safe_error
             print(f"Erro: {safe_error(error)}")
             code = 1
         raise SystemExit(code)
-    from .gui import run
+    from energy_monitor.gui import run
 
     run(config=store.config, cache=store.cache)
 

@@ -56,6 +56,21 @@ python -m energy_monitor
 
 Alterar apenas os limites de alerta reaproveita o resultado já exibido e recalcula só alertas e contadores. Mudar fonte, período ou filtros dispara nova consulta.
 
+### Executável
+
+Para gerar um executável no sistema atual:
+
+```bash
+python -m pip install -e ".[build]"
+pyinstaller energy_monitor.spec
+```
+
+O resultado fica em `dist/energy_monitor/` (`energy_monitor.exe` no Windows ou
+`energy_monitor` no Linux). O catálogo e os assets são incluídos no executável;
+os CSVs, índices e estado persistente continuam fora dele, em `data/sources/`,
+criado automaticamente. O build precisa ser feito separadamente em cada sistema
+operacional e arquitetura de destino.
+
 ## Linha de comando
 
 ```bash
