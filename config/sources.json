@@ -1,0 +1,733 @@
+{
+  "discovery_enabled": true,
+  "timezone": "America/Sao_Paulo",
+  "read_workers": 2,
+  "download_workers": 3,
+  "update_times": [
+    "12:30",
+    "20:30"
+  ],
+  "resources": [
+    {
+      "id": "pld_historico_semanal_2001_2020",
+      "source": "CCEE",
+      "start": "2001-01-01",
+      "end": "2020-12-31",
+      "mutable": false,
+      "url": "https://pda-download.ccee.org.br/lmj9cIypRAe_AOjGlxi61g/content"
+    },
+    {
+      "id": "pld_horario_2021",
+      "source": "CCEE",
+      "start": "2021-01-01",
+      "end": "2021-12-31",
+      "mutable": "current_year",
+      "url": "https://pda-download.ccee.org.br/SMpDR_R7SCOOj6pMbk1BJg/content"
+    },
+    {
+      "id": "pld_horario_2022",
+      "source": "CCEE",
+      "start": "2022-01-01",
+      "end": "2022-12-31",
+      "mutable": "current_year",
+      "url": "https://pda-download.ccee.org.br/0YTnGY1jRb-tarnKnSNT9g/content"
+    },
+    {
+      "id": "pld_horario_2023",
+      "source": "CCEE",
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "mutable": "current_year",
+      "url": "https://pda-download.ccee.org.br/HH4Xegm7R56M_H4qPNOvaw/content"
+    },
+    {
+      "id": "pld_horario_2024",
+      "source": "CCEE",
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "mutable": "current_year",
+      "url": "https://pda-download.ccee.org.br/rMsBwN6TT-WUW2_LbGUvkw/content"
+    },
+    {
+      "id": "pld_horario_2025",
+      "source": "CCEE",
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "mutable": "current_year",
+      "url": "https://pda-download.ccee.org.br/korJMXwpSLGyVlpRMQWduA/content"
+    },
+    {
+      "id": "pld_horario_2026",
+      "source": "CCEE",
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "mutable": "current_year",
+      "url": "https://pda-download.ccee.org.br/6A5wq97KTCWv_bvs3CqsQQ/content"
+    },
+    {
+      "id": "GERACAO_USINA-2_2000",
+      "source": "ONS",
+      "start": "2000-01-01",
+      "end": "2000-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2000.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2001",
+      "source": "ONS",
+      "start": "2001-01-01",
+      "end": "2001-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2001.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2002",
+      "source": "ONS",
+      "start": "2002-01-01",
+      "end": "2002-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2002.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2003",
+      "source": "ONS",
+      "start": "2003-01-01",
+      "end": "2003-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2003.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2004",
+      "source": "ONS",
+      "start": "2004-01-01",
+      "end": "2004-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2004.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2005",
+      "source": "ONS",
+      "start": "2005-01-01",
+      "end": "2005-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2005.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2006",
+      "source": "ONS",
+      "start": "2006-01-01",
+      "end": "2006-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2006.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2007",
+      "source": "ONS",
+      "start": "2007-01-01",
+      "end": "2007-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2007.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2008",
+      "source": "ONS",
+      "start": "2008-01-01",
+      "end": "2008-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2008.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2009",
+      "source": "ONS",
+      "start": "2009-01-01",
+      "end": "2009-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2009.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2010",
+      "source": "ONS",
+      "start": "2010-01-01",
+      "end": "2010-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2010.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2011",
+      "source": "ONS",
+      "start": "2011-01-01",
+      "end": "2011-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2011.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2012",
+      "source": "ONS",
+      "start": "2012-01-01",
+      "end": "2012-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2012.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2013",
+      "source": "ONS",
+      "start": "2013-01-01",
+      "end": "2013-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2013.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2014",
+      "source": "ONS",
+      "start": "2014-01-01",
+      "end": "2014-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2014.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2015",
+      "source": "ONS",
+      "start": "2015-01-01",
+      "end": "2015-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2015.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2016",
+      "source": "ONS",
+      "start": "2016-01-01",
+      "end": "2016-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2016.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2017",
+      "source": "ONS",
+      "start": "2017-01-01",
+      "end": "2017-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2017.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2018",
+      "source": "ONS",
+      "start": "2018-01-01",
+      "end": "2018-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2018.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2019",
+      "source": "ONS",
+      "start": "2019-01-01",
+      "end": "2019-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2019.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2020",
+      "source": "ONS",
+      "start": "2020-01-01",
+      "end": "2020-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2020.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2021",
+      "source": "ONS",
+      "start": "2021-01-01",
+      "end": "2021-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2021.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-01",
+      "source": "ONS",
+      "start": "2022-01-01",
+      "end": "2022-01-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_01.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-02",
+      "source": "ONS",
+      "start": "2022-02-01",
+      "end": "2022-02-28",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_02.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-03",
+      "source": "ONS",
+      "start": "2022-03-01",
+      "end": "2022-03-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_03.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-04",
+      "source": "ONS",
+      "start": "2022-04-01",
+      "end": "2022-04-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_04.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-05",
+      "source": "ONS",
+      "start": "2022-05-01",
+      "end": "2022-05-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_05.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-06",
+      "source": "ONS",
+      "start": "2022-06-01",
+      "end": "2022-06-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_06.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-07",
+      "source": "ONS",
+      "start": "2022-07-01",
+      "end": "2022-07-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_07.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-08",
+      "source": "ONS",
+      "start": "2022-08-01",
+      "end": "2022-08-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_08.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-09",
+      "source": "ONS",
+      "start": "2022-09-01",
+      "end": "2022-09-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_09.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-10",
+      "source": "ONS",
+      "start": "2022-10-01",
+      "end": "2022-10-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_10.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-11",
+      "source": "ONS",
+      "start": "2022-11-01",
+      "end": "2022-11-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_11.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2022-12",
+      "source": "ONS",
+      "start": "2022-12-01",
+      "end": "2022-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2022_12.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-01",
+      "source": "ONS",
+      "start": "2023-01-01",
+      "end": "2023-01-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_01.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-02",
+      "source": "ONS",
+      "start": "2023-02-01",
+      "end": "2023-02-28",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_02.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-03",
+      "source": "ONS",
+      "start": "2023-03-01",
+      "end": "2023-03-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_03.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-04",
+      "source": "ONS",
+      "start": "2023-04-01",
+      "end": "2023-04-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_04.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-05",
+      "source": "ONS",
+      "start": "2023-05-01",
+      "end": "2023-05-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_05.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-06",
+      "source": "ONS",
+      "start": "2023-06-01",
+      "end": "2023-06-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_06.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-07",
+      "source": "ONS",
+      "start": "2023-07-01",
+      "end": "2023-07-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_07.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-08",
+      "source": "ONS",
+      "start": "2023-08-01",
+      "end": "2023-08-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_08.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-09",
+      "source": "ONS",
+      "start": "2023-09-01",
+      "end": "2023-09-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_09.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-10",
+      "source": "ONS",
+      "start": "2023-10-01",
+      "end": "2023-10-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_10.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-11",
+      "source": "ONS",
+      "start": "2023-11-01",
+      "end": "2023-11-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_11.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2023-12",
+      "source": "ONS",
+      "start": "2023-12-01",
+      "end": "2023-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2023_12.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-01",
+      "source": "ONS",
+      "start": "2024-01-01",
+      "end": "2024-01-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_01.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-02",
+      "source": "ONS",
+      "start": "2024-02-01",
+      "end": "2024-02-29",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_02.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-03",
+      "source": "ONS",
+      "start": "2024-03-01",
+      "end": "2024-03-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_03.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-04",
+      "source": "ONS",
+      "start": "2024-04-01",
+      "end": "2024-04-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_04.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-05",
+      "source": "ONS",
+      "start": "2024-05-01",
+      "end": "2024-05-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_05.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-06",
+      "source": "ONS",
+      "start": "2024-06-01",
+      "end": "2024-06-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_06.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-07",
+      "source": "ONS",
+      "start": "2024-07-01",
+      "end": "2024-07-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_07.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-08",
+      "source": "ONS",
+      "start": "2024-08-01",
+      "end": "2024-08-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_08.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-09",
+      "source": "ONS",
+      "start": "2024-09-01",
+      "end": "2024-09-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_09.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-10",
+      "source": "ONS",
+      "start": "2024-10-01",
+      "end": "2024-10-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_10.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-11",
+      "source": "ONS",
+      "start": "2024-11-01",
+      "end": "2024-11-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_11.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2024-12",
+      "source": "ONS",
+      "start": "2024-12-01",
+      "end": "2024-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2024_12.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-01",
+      "source": "ONS",
+      "start": "2025-01-01",
+      "end": "2025-01-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_01.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-02",
+      "source": "ONS",
+      "start": "2025-02-01",
+      "end": "2025-02-28",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_02.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-03",
+      "source": "ONS",
+      "start": "2025-03-01",
+      "end": "2025-03-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_03.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-04",
+      "source": "ONS",
+      "start": "2025-04-01",
+      "end": "2025-04-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_04.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-05",
+      "source": "ONS",
+      "start": "2025-05-01",
+      "end": "2025-05-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_05.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-06",
+      "source": "ONS",
+      "start": "2025-06-01",
+      "end": "2025-06-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_06.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-07",
+      "source": "ONS",
+      "start": "2025-07-01",
+      "end": "2025-07-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_07.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-08",
+      "source": "ONS",
+      "start": "2025-08-01",
+      "end": "2025-08-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_08.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-09",
+      "source": "ONS",
+      "start": "2025-09-01",
+      "end": "2025-09-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_09.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-10",
+      "source": "ONS",
+      "start": "2025-10-01",
+      "end": "2025-10-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_10.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-11",
+      "source": "ONS",
+      "start": "2025-11-01",
+      "end": "2025-11-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_11.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2025-12",
+      "source": "ONS",
+      "start": "2025-12-01",
+      "end": "2025-12-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2025_12.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-01",
+      "source": "ONS",
+      "start": "2026-01-01",
+      "end": "2026-01-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_01.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-02",
+      "source": "ONS",
+      "start": "2026-02-01",
+      "end": "2026-02-28",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_02.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-03",
+      "source": "ONS",
+      "start": "2026-03-01",
+      "end": "2026-03-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_03.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-04",
+      "source": "ONS",
+      "start": "2026-04-01",
+      "end": "2026-04-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_04.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-05",
+      "source": "ONS",
+      "start": "2026-05-01",
+      "end": "2026-05-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_05.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-06",
+      "source": "ONS",
+      "start": "2026-06-01",
+      "end": "2026-06-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_06.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-07",
+      "source": "ONS",
+      "start": "2026-07-01",
+      "end": "2026-07-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_07.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-08",
+      "source": "ONS",
+      "start": "2026-08-01",
+      "end": "2026-08-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_08.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-09",
+      "source": "ONS",
+      "start": "2026-09-01",
+      "end": "2026-09-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_09.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-10",
+      "source": "ONS",
+      "start": "2026-10-01",
+      "end": "2026-10-31",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_10.csv"
+    },
+    {
+      "id": "GERACAO_USINA-2_2026-11",
+      "source": "ONS",
+      "start": "2026-11-01",
+      "end": "2026-11-30",
+      "mutable": "current_month",
+      "url": "https://ons-aws-prod-opendata.s3.amazonaws.com/dataset/geracao_usina_2_ho/GERACAO_USINA-2_2026_11.csv"
+    }
+  ],
+  "request_headers": {
+    "CCEE": {
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/jxl,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "accept-language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+      "priority": "u=0, i",
+      "referer": "https://dadosabertos.ccee.org.br/",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": "\"Android\"",
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "same-site",
+      "sec-fetch-user": "?1",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36"
+    }
+  }
+}

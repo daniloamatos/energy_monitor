@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energy-monitor"
+version = "0.1.0"
+description = "Monitor de dados públicos de energia da CCEE e do ONS"
+readme = "README.md"
+requires-python = ">=3.15"
+dependencies = [
+    "requests",
+    "tzdata; sys_platform == 'win32'",
+    "pandas",
+    "numpy",
+    "openpyxl",
+    "PySimpleGUI>=6.3.0.1,<7",
+    "screeninfo>=0.8.1,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+energy_monitor = ["assets/*.png", "assets/*.svg"]
