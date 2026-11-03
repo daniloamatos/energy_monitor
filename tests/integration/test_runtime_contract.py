@@ -19,6 +19,22 @@ from energy_monitor.updater import Ledger, UpdateExecutor
 ZONE = ZoneInfo('America/Sao_Paulo')
 
 
+def test_cache_padrao_e_criado_no_projeto_sem_pasta_data(tmp_path, monkeypatch):
+    project = tmp_path / "project"
+    (project / "config").mkdir(parents=True)
+    (project / "config" / "sources.json").write_text(
+        '{"timezone":"America/Sao_Paulo","update_times":["12:30"],"resources":[]}',
+        encoding="utf-8")
+    result = subprocess.run(
+        [sys.executable, "-c",
+         "from energy_monitor.data_sources import ROOT, CONFIG, CACHE; "
+         "print(ROOT); print(CONFIG); print(CACHE)"],
+        cwd=project, capture_output=True, text=True, check=True)
+    assert result.stdout.splitlines() == [
+        str(project), str(project / "config" / "sources.json"),
+        str(project / "data" / "sources")]
+
+
 def test_agenda_so_dispara_no_horario_configurado_e_avanca_para_o_proximo():
     schedule = Schedule({'timezone': 'America/Sao_Paulo', 'update_times': ['12:30', '20:30']})
     assert schedule.due(datetime(2026, 11, 3, 12, 29, tzinfo=ZONE)) is False

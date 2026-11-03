@@ -33,7 +33,12 @@ import sys
 from .generations import active_path, prepare, publish, cleanup_candidate
 from .daily_cache import index_csv
 
-ROOT = Path(__file__).resolve().parents[2]
+if getattr(sys, "frozen", False):
+    ROOT = Path(getattr(sys, "_MEIPASS", Path(sys.executable).parent))
+else:
+    package_root = Path(__file__).resolve().parents[2]
+    ROOT = (Path.cwd() if (Path.cwd() / "config" / "sources.json").is_file()
+            else package_root)
 CONFIG = ROOT / "config" / "sources.json"
 CACHE = ROOT / "data" / "sources"
 
